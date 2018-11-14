@@ -1,0 +1,16 @@
+<nav class="navbar navbar-default"></nav>
+<div>
+    <nav>
+        <div class="navbar-header">
+            <a href="{% url 'review_list' %}" class="navbar-brand">Movies Reviews</a>
+        </div>
+        <div>
+            <ul>
+                <li><a href="{% url 'movie_list' %}">Movie List</a></li>
+                <li><a href="{% url 'review_list' %}">Home</a></li>
+            </ul>
+            {% block content%}
+            {% endblock %}
+        </div>
+    </nav>
+</div>
